@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <table>
+    <form>
+        <tr>
+            <td>
+                <label for="name">Full Name</label>
+                <input type="text" pattern="[a-zA-Z]{2,15}" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="email">Email</label>
+                <!--anshpatel6781@gmail.com-->
+                <input type="email" pattern="[a-z0-9.]+@+[a-z]+.+[a-z]{2,25}" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="Phone">Phone number</label>
+                <input type="tel" pattern="[6789][0-9]{9}" maxlength="10" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="Subject">Subject</label>
+                
+                <select>
+                    <option value=""></option>
+                    <option value="Maths">Maths</option>
+                    <option value="Sci">Sci</option>
+                    <option value="S.S">S.S</option>
+                    <option value="Guj">Guj</option>
+                    <option value="Hindi">Hindi</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="message">Message</label>
+                <textarea rows="5" cols="35" required></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit">
+            </td>
+        </tr>
+    </form>
+   </table>
+</body>
+</html>
