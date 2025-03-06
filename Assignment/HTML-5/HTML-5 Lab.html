@@ -1,0 +1,66 @@
+!
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Example</title>
+</head>
+
+<body>
+
+    <!-- Video Tag Example-->
+    <h2>Video Example</h2>
+    <video width="320" height="240" controls muted loop autoplay>
+        <source src="video-example.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+
+    <!-- Audio Tag Example-->
+    <h2>Audio Example</h2>
+    <audio controls muted loop autoplay>
+        <source src="audio-example.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Canvas Tag Example -->
+    <h2>Canvas Example</h2>
+    <canvas id="myCanvas" width="400" height="200" style="border:1px solid black;"></canvas>
+    <script>
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // Draw a rectangle Example
+        ctx.fillStyle = 'green';
+        ctx.fillRect(30, 30, 100, 50);
+
+        // Draw a circle Example
+        ctx.beginPath();
+        ctx.arc(200, 100, 40, 0, 2 * Math.PI);
+        ctx.fillStyle = 'blue';
+        ctx.fill();
+
+        // Draw a line Example
+        ctx.beginPath();
+        ctx.moveTo(300, 50);
+        ctx.lineTo(350, 150);
+        ctx.strokeStyle = 'brown';
+        ctx.stroke();
+    </script>
+
+    <!-- SVG Tag Example-->
+    <h2>SVG Example</h2>
+    <svg width="400" height="200" style="border:1px solid black;">
+        <!-- Draw a rectangle Example-->
+        <rect x="50" y="50" width="100" height="50" fill="blue" />
+
+        <!-- Draw a circle Example-->
+        <circle cx="200" cy="100" r="40" fill="red" />
+
+        <!-- Draw a line Example-->
+        <line x1="300" y1="50" x2="350" y2="150" stroke="green" stroke-width="2" />
+    </svg>
+</body>
+
+</html>
